@@ -7,6 +7,7 @@
 /* shared style */
 .bg-light{
    background-color: rgba(255, 144, 14, 0.1);
+   margin-bottom: 50px;
 }
 .bg-size{
     max-width: 1440px;
@@ -29,6 +30,7 @@
 .navbar{
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 .brand{
     font-size: 2.8rem;
@@ -71,10 +73,49 @@
     width: 100%;
     padding-bottom: 20px;
 }
+/* header section end */
+/* team and feature style start */
+.teams{
+    align-items: center;
+    gap: 20px;
+}
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.feature-content{
+    margin-left: 75px;
+    max-width: 530px;
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#quick-list{
+    color: rgba(114, 114, 114, 1);
+    font-weight: 500;
+}
+#features{
+    color: rgba(255, 144, 14, 1);
+}
+.feature-description{
+    color: rgba(114, 114, 114, 1);
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+/* team and feature style end */
 
-
+/* responsive website design */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-link{
+    .navbar, 
+    .nav-link,
+    .teams
+    {
         flex-direction: column;
+    }
+    .team-image{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
