@@ -216,4 +216,10 @@
         margin-top: 20px;
         margin-left: 20px;
      }
+     .navbar{
+        padding-top: 50px;
+     }
+     .facts, .experience{
+        padding-left: 30px;
+     }
 }
